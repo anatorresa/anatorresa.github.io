@@ -73,48 +73,92 @@ html[xmlns] .clearfix { display: block; }
 
 /*==================START HERE====================*/
 
-#site-header h1 a {
- display:block;  
- width:445px; 
- height:95px;  
- background:url(images/dogvscat-logo.gif) no-repeat top left; 
- text-indent:-9999px;
- }
-
-#body {
-	font: 12px Georgia, Serif;
-	text-align:left;
-	line-height:1.4em;
+body {
+	font: 16px Georgia, Serif;
+	margin: 0 auto;
+	width: 70%;
 }
-	
+
+h1{
+	text-align:center;
+}
+
+
+h2 {
+	font-size:1.5em;
+	font-weight:bold;
+	padding-top:10px;
+	padding-bottom:10px;
+}
+
+.logo{
+	display:inline-block;
+	padding-bottom:20px;
+	padding-top:25px;
+}
+
 #topnav {
-	font-weight:bold;
-	font-size:1.6em;
-	text-transform:uppercase;
-	list-style:none; 
-}
-#dogs h2{
-	font-weight:bold;
-	font-size:1.4em;
-}
-#dogs p{
-	font-size:1em;
+	text-transform: uppercase;
+	text-align:center;
+	border-top: black solid 3px;
+	border-bottom: black solid 3px;
 }
 
-#cats h2{
-	font-weight:bold;
-	font-size:1.4em;
+#topnav li{
+	font-size:1.5em;
+	font-weight:bold;;
+	display:block;
+	padding:5px 20px 10px 20px;
+	display:inline-block;
+}
+
+ul li:after { 
+	content: " \00b7"; 
+	font-size:1.6em; 
+	padding-left:5px; 
+}
+
+ul li:last-child:after { content: none; }
+
+article img{
+	max-width:100%;
+	padding-top:20px;
+}
+
+p {
+	padding-bottom:20px;
+}
+
+a {
+	text-decoration:none;
+	color: red;
+}
+
+#dogs {
+	clear:left;
+	width:45%;
+	float:left;
 }
 
 #cats {
-	font-size:1em;
+	width:45%;
+	float:right;
 }
 
-#bottom {
+footer {
+	clear:right;
+	border-top: solid black 3px;
+	padding-top: 15px;
 	font-size:0.8em;
 }
 
-#bottom a {
-	color:red;
-	text-decoration:none
-}
+p.credits {
+	float:left;
+	}
+	
+p.author {
+	clear:left;
+	float:right;
+	}
+
+

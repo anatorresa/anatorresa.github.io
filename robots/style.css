@@ -50,3 +50,42 @@ table {
 	border-spacing: 0;
 }
 
+/*------END OF RESET START HERE -----*/
+
+body{
+	width:100%;
+	font-family:arial;
+	font-color:brown;
+	margin:0 auto;
+}
+
+#site-header{
+	background-color:green;
+	width: 500px;
+	margin:0 auto;
+}
+
+#site-wrapper{
+	background-color:teal;
+}
+
+#menu-wrapper{
+	background-color:blue;;
+}
+
+#main-menu{
+	background-color:red;
+	width:500 px;
+	margin:0 auto;
+}
+
+h1{
+	font-size:1.2em;
+}
+
+#ul li a{
+	float:right;
+	text-decoration:none;
+}
+
+

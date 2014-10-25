@@ -52,4 +52,18 @@ table {
 
 /* -----------------END RESET---------------- */
 
+body{
+	font-family:arial, sans-serif;
+	font-size:12pt;
+	position:relative;
+	width:900px;
+	margin: 0 auto;
+}
 
+h1{
+	font-size:1.6em;
+}
+
+p{
+	
+}
