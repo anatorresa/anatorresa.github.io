@@ -56,12 +56,45 @@ body{
 	font-family:arial, sans-serif;
 	font-size:12pt;
 	position:relative;
-	width:900px;
+	width:100%;
 	margin: 0 auto;
 }
 
+#main-content {
+}
+
 h1{
+	float:right;
 	font-size:1.6em;
+}
+
+h2{
+	float:right;
+	font-size:1.4em;
+}
+
+p{
+	float:right;
+}
+
+#columnLeft {
+	float:left;
+	width:45%;
+}
+
+img llama-photo {
+	position:absolute;
+	left:20px;
+	top:30px;
+}
+
+#columnRight {
+	float:right;
+	width:45%;
+}
+
+#img {
+	padding-top:20px;
 }
 
 p{
