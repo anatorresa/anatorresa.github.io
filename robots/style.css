@@ -54,30 +54,43 @@ table {
 
 body {
 	font-family:arial;
-	width:960px;
+	width:100%;
 	margin:0 auto;
 	font-color:#9c764a
 }
 
+#site-wrapper {
+	background-color:#eef4d9;
+}
 
 #site-header {
 	position:relative;
+	width:80%;
+	margin: 0 auto;
 	height:120px;
-	background-color:#d4e0a3;	
+	background-color:#eef4d9;	
 }
 
 a {
 	text-decoration:none;
+	color:saddlebrown;
 }
 
 #site-header h1 {
 	position:absolute;
 	display:block;
-	width:250px;
+	width:500px;
 	height:100px;
 	left:15px;
 }
 
+#site-header h1 a {
+ display:block;  
+ width:360px; 
+ height:123px;  
+ background:url(images/logo.png) no-repeat top left; 
+ text-indent:-9999px;
+ }
 
 #top-nav { 
 	text-decoration:none;
@@ -89,9 +102,14 @@ a {
 	color:saddlebrown;
 }
 
+#menu-wrapper {
+	background-color:#4f3a11;
+}
 
 #main-menu {
 	position:relative;
+	width:80%;
+	margin: 0 auto;
 	height:55px;
 	background-color:#4f3a11;
 }	
@@ -111,11 +129,9 @@ a {
 	text-decoration:none;
 }	
 
-
 #page { 
 	float:left; 
-	width:45%;
-	height:400px;
+	width:40%;
 	margin:20px 15px;
 	padding:10px;
 }
@@ -151,71 +167,77 @@ p{
 #sidebar {
 	float:right;
 	width:30%;
-	height:400px;
 	margin-top:20px;
 	padding-right:10px;
 	padding-top:20px;
 	margin-bottom:20px;
 }
 
+#sidebar h1{
+	font-size:1.2em;
+	margin-top: 20px;
+}
+
 #sidebar li{
 	line-height:1.3em;
+	font-size:1em;
 	color:saddlebrown;
-	max-height:400px;
 }	
+
+#sidebar li:first-child {
+	padding-top:10px;
+}
+
+#sidebar li:last-child {
+	padding-bottom:10px;
+}
 
 #sidebar a{
 	text-decoration:none;
 	color:saddlebrown;
 }	
 
-
 #site-footer {
-	clear:both;
-	position:relative;
+	clear:right;
 	display:block;
-	height:150px;
-	margin-top:20px;
-	margin-bottom:20px;
+	height:160px;
 	background-color:#9c764a;
+}
+
+#footer-contact {
+	float:left;
 }
 
 #footer-contact h1 {
 	font-size:1.2em;
-	float:left;
 	color:tan;
 	width:20%;
 	margin:15px 15px 5px 20px;
 }
 
 #footer-contact p {
-	clear:left;
-	float:left;
 	color:white;
 	line-height:1.4em;
-	width:20%;
-	margin:0px 0px 0px 20px;
+	width:30%;
+	margin-left:20px;
+}
+
+
+#footer-follow {
+	width:40%;
+	float:left;
+	margin-top:15px
 }
 
 #footer-follow h1{
-	clear:left;
-	position:absolute;
-	left: 250px;
-	top:15px;
+	width:25%;
 	font-size:1.2em;
 	color:tan;
 }
 
 #footer-follow li{
-	clear:both;
 	display:inline-block;
-	font-size:1.2em;
-	color:tan !important;
 }
 
-#footer-follow a{
-	float:right;
-	margin-left: 20px;
-	margin-top:50px;
 
-}
+
