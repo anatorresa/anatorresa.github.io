@@ -74,73 +74,76 @@ html[xmlns] .clearfix { display: block; }
 /* ============START HERE==============*/
 
 
-#body {
-	font:arial, sans-serif;
-	font-size:12px;
-	text-align:left;
-	line-height:1.5em;
+body{
+	font-family:arial, sans-serif;
+	font-size:12pt;
+	margin: 0 auto;
+	width:550px;
+	margin-top:20px;
 }
 
-#a {
-	font-size:0.5em;
-	color:red;
-	text-decoration:none;	
-}
-
-#recipe-name {
-	font: arial, sans-serif;
+h1 {
 	text-transform:uppercase;
+	font-size:2.5em;
 	font-weight:bold;
-	font-size:2.2em;
 }
 
-#recipe-subtitle {
-	font: arial, sans-serif;
+h2 {
 	text-transform:uppercase;
 	font-size:1em;
+	color:grey;
+}
+
+h3 {
+	font-weight:bold;
+	text-transform:uppercase;
+}
+
+h4 {
+	font-weight:bold;
+	text-transform:uppercase;
+}
+
+h5 {
+	text-transform:uppercase;
+	padding-top:30px;
 }
 
 #servings {
-	font: arial, sans-serif;
-	text-transform:uppercase;
+	float:right;
 	font-weight:bold;
-	font-size:1em;
-}
-	
-#ingredients h3{
-	font: arial, sans-serif;
 	text-transform:uppercase;
-	font-weight:bold;
-	font-size:1.2em;
+	width:20%
 }
 
-#ingredients li {
-	font-size:0.8em;
-	list-style:none; 
-}
-	
-#preparation h3{
-	text-transform:uppercase;
-	font-weight:bold;
-	font-size:1.2em;
+ul li:first-child {
+	padding-top:30px
 }
 
-#preparation p{
-	font-size:0.8em;
+section {
+	float:left;
+	width:45%;
+	padding-top:20px;
+	padding-right:10p;
+	line-height:1.5em;
 }
 
-#notes {
-	text-transform:uppercase;
+p {
+	padding-top:20px;
 	font-size:0.8em;
+	line-height:1.2em;	
 }
 
-#note1 {
-	text-transform:lowercase;
-	font-size:0.8em;
+p#note {
+	clear:left;
+	float:right;
+	width:50%;
+	line-height:2em;
 }
 
-#note2 {
-	text-transform:lowercase;
-	font-size:0.8em;
+#bottom {
+	clear:both;
 }
+
+
 
