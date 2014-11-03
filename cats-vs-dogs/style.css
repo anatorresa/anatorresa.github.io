@@ -94,6 +94,7 @@ h2 {
 }
 
 .logo{
+	max-width:80%;
 	display:inline-block;
 	padding-bottom:20px;
 	padding-top:25px;
@@ -109,7 +110,6 @@ h2 {
 #topnav li{
 	font-size:1.5em;
 	font-weight:bold;;
-	display:block;
 	padding:5px 10px 10px 20px;
 	display:inline-block;
 }
@@ -156,9 +156,18 @@ p.author {
 	float:right;
 	}
 
-@media screen and (max-width:600px)
-	body {
+@media screen and (max-width:600px) {
+		#topnav li{font-size:1.3em; display:inline-block;}
+		#topnav li:nth-child(4) {display:none;}
+		#topnav li:nth-child(8) {display:none;}
 		#dogs { float:none; width:98%; margin:0 1%; }
 	    #cats { float:none; width:98%; margin:0 1%; }   
+		h1 {font-size: 1em;}
+		h2 {font-size: 1.3em;}
+		body {font-size:1em;}
+		p {padding-bottom:5px;}
+		p.credits {float:none;}
+		p.author {float:none;}	
+		
 }
 
