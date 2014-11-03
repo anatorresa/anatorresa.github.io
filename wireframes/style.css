@@ -75,9 +75,11 @@ html[xmlns] .clearfix { display: block; }
 
 
 body {
-	font: 16px Arial, sans-serif;
+	font:30px Arial, sans-serif;
+	color:white;
 	margin: 0 auto;
 	width:100%;
 	max-width: 900px;
-	color:grey;
+	background-color:#eeeeec;
+	padding-top:40px;
 }
