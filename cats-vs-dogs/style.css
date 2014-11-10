@@ -100,7 +100,9 @@ body {
 	font-weight:bold;
 	color:grey;
 	border-top:double;
+	border-top-width:thick;
 	border-bottom:double;
+	border-bottom-width:thick;
 	vertical-align: top;
 	position: relative;
 	top: 0.4em;
