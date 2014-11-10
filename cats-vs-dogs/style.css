@@ -99,8 +99,12 @@ body {
 	font-style:italic;
 	font-weight:bold;
 	color:grey;
-	border-bottom:grey double;
-	border-top:grey double;
+	border-top:double;
+	border-bottom:double;
+	vertical-align: top;
+	position: relative;
+	top: 0.4em;
+	padding:0px 8px 1px 8px;
 }
 
 
