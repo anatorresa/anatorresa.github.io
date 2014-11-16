@@ -1,0 +1,165 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* Center Content */
+
+.centered { 
+  margin:0 auto;
+  width:960px;
+}
+
+
+/* Clearfix */
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+ 
+.clearfix { display: inline-block; }
+html[xmlns] .clearfix { display: block; }
+* html .clearfix { height: 1%; }
+
+
+/*==================START HERE====================*/
+
+
+body {
+	font-family: 'Open Sans Condensed', sans-serif;
+	margin: 0 auto;
+	width:100%;
+	max-width: 900px;
+}
+
+#site-header {
+	float:left;
+}
+
+#site-header h1 {
+	font-size:3em;
+	text-transform:uppercase;
+}
+
+#topnav li{
+	font-size:1.5em;
+	font-weight:bold;;
+	padding:5px 10px 10px 20px;
+	display:inline-block;
+}
+
+h2 {
+	font-size:1.5em;
+}
+
+#topnav {
+	text-transform: uppercase;
+	text-align:center;
+	border-top: black solid 3px;
+	border-bottom: black solid 3px;
+}
+
+#slider img{
+	max-width:100%;
+	padding-top:20px;
+}
+
+p {
+	line-height:1.5em;
+}
+
+a {
+	text-decoration:none;
+	color: red;
+}
+
+#dogs {
+	clear:left;
+	width:45%;
+	float:left;
+}
+
+#cats {
+	width:45%;
+	float:right;
+}
+
+footer {
+	clear:right;
+	border-top: solid black 3px;
+	padding-top: 15px;
+	font-size:0.8em;
+}
+
+p.credits {
+	float:left;
+	}
+	
+p.author {
+	clear:left;
+	float:right;
+	}
+
+@media screen and (max-width:600px) {
+		#topnav li{font-size:1.3em; display:inline-block;}
+		#topnav li:nth-child(4) {display:none;}
+		#topnav li:nth-child(8) {display:none;}
+		#dogs { float:none; width:98%; margin:0 1%; }
+	    #cats { float:none; width:98%; margin:0 1%; }   
+		h1 {font-size: 1em;}
+		h2 {font-size: 1.3em;}
+		body {font-size:1em;}
+		p {padding-bottom:5px;}
+		p.credits {float:none;}
+		p.author {float:none;}	
+		
+}

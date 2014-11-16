@@ -56,7 +56,6 @@ body {
 	font-family:arial;
 	width:100%;
 	margin:0 auto;
-	font-color:#9c764a
 }
 
 #site-wrapper {
@@ -64,11 +63,14 @@ body {
 }
 
 #site-header {
-	position:relative;
 	width:80%;
 	margin: 0 auto;
 	height:120px;
 	background-color:#eef4d9;	
+}
+
+#logo {
+	display:block;
 }
 
 a {
@@ -76,21 +78,11 @@ a {
 	color:saddlebrown;
 }
 
-#site-header h1 {
-	position:absolute;
-	display:block;
+#site-header h1{
 	width:500px;
 	height:100px;
-	left:15px;
 }
 
-#site-header h1 a {
- display:block;  
- width:360px; 
- height:123px;  
- background:url(images/logo.png) no-repeat top left; 
- text-indent:-9999px;
- }
 
 #top-nav { 
 	text-decoration:none;
