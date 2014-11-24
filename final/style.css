@@ -152,6 +152,10 @@ a {
 	color:grey;
 }
 
+#pic {
+	padding-top:30px;
+}
+
 img {
 	padding: 10px, 0px, 10px, 0px;
 }
