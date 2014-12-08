@@ -134,6 +134,8 @@ p {
 	margin:0 auto;
 	width:100%;
 	float:left;
+	font-weight:500;
+	text-transform:capitalize;
 }
 
 p.description {
