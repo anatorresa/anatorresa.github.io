@@ -137,7 +137,7 @@ p {
 }
 
 p.description {
-	mrgin:0 auto;
+	margin:0 auto;
 	clear:both;
 	text-align:center;
 }
@@ -222,6 +222,8 @@ a {
 a:link{
         color: black;
         text-decoration:none;
+        text-transform:uppercase;
+       	font-weight:700;
 
 }
 
