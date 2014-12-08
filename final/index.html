@@ -4,30 +4,35 @@
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
 	<title>Ana Torres Website</title>
 	<link rel="stylesheet" href="style.css" type="text/css" media="screen">
-	<script src="file.js"></script>
+ 	<link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+  	<link rel="stylesheet" href="owl-carousel/owl.theme.css">
 </head>
 <body>
 <header id= "site-header">
 	<nav id= "top-nav">
 		<h1>ana torres</h1>
-		<!--Make all the nav elements in all caps-->
-		<ul>
-			<li class= icon><a href= "mailto:anatorresa@gmail.com"><img src= "images/nav_buttons/icon-email.png" alt= "email icon"></a></li>
-			<li class= icon><a href="https://www.linkedin.com/profile/view?id=71537941&trk=nav_responsive_tab_profile_pic"><img src= "images/nav_buttons/icon-linkedin.png" alt= "linkedin icon"></a></li>
-			<li class= icon><a href="https://twitter.com/anitius?lang=en"><img src= "images/nav_buttons/icon-twitter.jpg" alt= "linkedin icon"></a></li>
-			<li class= text><a href= "research.html">Research</a></li>
-			<li class= text><a href= "work.html">Work</a></li>
-			<li class= text><a href= "about.html">About</a></li>	
+		<ul class= "nav">
+				<li class= email><a href= "mailto:anatorresa@gmail.com"><img src= "images/nav_buttons/icon-email.png" alt= "email icon"></a></li>
+				<li class= linkedin><a href="https://www.linkedin.com/profile/view?id=71537941&trk=nav_responsive_tab_profile_pic"><img src= "images/nav_buttons/icon-linkedin.png" alt= "linkedin icon"></a></li>
+				<li class= twitter><a href="https://twitter.com/anitius?lang=en"><img src= "images/nav_buttons/icon-twitter.png" alt= "linkedin icon"></a></li>
+				<li class= "text"><a href= "research.html">Research</a></li>
+				<li class= "text"><a href= "work_bloom.html">Work</a></li>
+				<li class= "text"><a href= "about.html">About</a></li>	
 		</ul>
 		</nav>
 		</header>
-	<section id= "slider">		
-	<a href=#><img src= "images/slide1.jpg" alt= "slide1 brainstorm"></a>
-	</section>	
+
+  <div class="image-carrossel">
+    <div class="item">
+    		<a href="2"><img src="images/slide1.jpg" /></a>
+    </div>
+    <div class="item"><img src="images/slide2.jpg" /></div>
+    <div class="item"><img src="images/slide3.jpg" /></div>
+    </div>
 	<section class= "myBox"><a href= "research.html">
 	<h2>Jell-O Case Study</h2>
-	<p>Research for thw Dynamic Media Institute MFA about tangible interactions</p>
-	<img src= "images/jell0_index.jpg" alt= "testing jellO"></a>
+	<p>Research for the MFA in Design: Dynamic Media Institute</p>
+	<img id src= "images/jell0_index.jpg" alt= "testing jellO"></a>
     <a href="research.html"></a>
 	</section>
 	<section class= "myBox"><a href= "work_mashup.html">
@@ -43,5 +48,29 @@
 	<footer>
 		<p= credits>Copyright &copy; 2014 email: anatorresa@gmail.com</p>
 	</footer>
+
+
+	<script src="jquery-1.11.1.min.js"></script>
+  	<script src="owl-carousel/owl.carousel.js"></script>
+
+<script>
+  $(document).ready(function() {
+    // http://owlgraphic.com/owlcarousel/
+    var owlDiv = $(".image-carrossel");
+    owlDiv.owlCarousel({
+      singleItem: true
+    });
+
+    // https://github.com/OwlFonk/OwlCarousel/issues/65
+    var owl = owlDiv.data('owlCarousel');
+    $(document).keydown(function(e) {
+      if (e.keyCode == 37) {
+        owl.prev();
+      } else if (e.keyCode == 39) {
+        owl.next();
+      }
+    });
+  });
+</script>
 </body>
 </html>
