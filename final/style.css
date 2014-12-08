@@ -219,27 +219,27 @@ a {
 	color:grey;
 }
  
-a.text:link{
+a:link{
         color: black;
         text-decoration:none;
 
 }
 
-a.text:visited{ 
+a:visited{ 
         color: grey;
-        border-bottom: 3px solid grey;
+        border-bottom: 3px solid black;
         text-decoration:none;
 
 }
 
-a.text:hover{
+a:hover{
         color: grey;
         border-bottom: 3px solid yellow;
         text-decoration:none;
 
 }
 
-a.text:active{
+a:active{
         color: black;
         text-align: none;
         border-bottom: 3px solid yellow;
